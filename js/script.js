@@ -10,6 +10,7 @@
                 record_mask_text_selector: '',
                 record_block_selector: '.sensitive-data',
                 record_idle_timeout_ms: 300000,
+                record_collect_fonts: false
             });
 
 //Start of navigation bar js
