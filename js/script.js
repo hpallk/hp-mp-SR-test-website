@@ -255,3 +255,16 @@ function changeImg3(){
 console.log("Sript running complete");
 
 //End of technology page
+
+
+// Mixpanel Flag SDK
+// Fetch the variant value once flags are ready and track an exposure event *if* the user context is in a rollout group for the feature flag.
+const fallback = false;
+const isEnabled = await mixpanel.flags.is_enabled("my-feature-flag", fallback);
+ 
+// Use the result in your application logic. 
+if (isEnabled) {
+  console.log("Record this user");
+} else {
+  console.log("Don't record");
+}
